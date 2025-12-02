@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: roboshop
+  labels:         #labels are mandatory in k8s
+    environment: development
+    project: roboshop

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: error-test
+spec:
+  containers:
+  - name: nginx       
+    image: ngindddwefrfg   #Image address is wrong
+  - name: almalinux    
+    image: almalinux:9     #This is bare min OS without container running.
+
+

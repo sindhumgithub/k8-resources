@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: roboshop
+  labels:
+    name: nginx
+    project: roboshop
+# This particular spec refers to the nginx container 
+# In Docker we are giving command to run container is 
+# docker run --name <container name> imagename
+spec:   
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
